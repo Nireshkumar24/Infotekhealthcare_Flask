@@ -1,0 +1,1028 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Infotek Medical Billing</title>
+    <!-- favicons Icons -->
+    <link rel="apple-touch-icon" sizes="180x180"
+        href="{{ url_for('static', filename='assets/images/favicons/infotekpreloader.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32"
+        href="{{ url_for('static', filename='assets/images/favicons/infotekpreloader.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="{{ url_for('static', filename='assets/images/favicons/infotekpreloader.png') }}">
+
+    <link rel="manifest" href="{{ url_for('static', filename='assets/images/favicons/site.webmanifest') }}">
+    <meta name="description" content="infotekhealthcare " />
+    <meta name="description"
+        content="Infotek Healthcare - Your partner in innovative healthcare solutions, specializing in coding and billing services." />
+    <meta name="keywords"
+        content="Infotek Healthcare, healthcare, medical coding, billing services, healthcare solutions, healthcare technology" />
+    <meta name="author" content="Infotek Healthcare" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#ffffff" /> <!-- Sets the theme color for mobile browsers -->
+    <meta property="og:title" content="Infotek Healthcare" />
+    <meta property="og:description"
+        content="Innovative healthcare solutions, specializing in coding and billing services." />
+    <meta property="og:image" content="URL_to_image" /> <!-- Replace with actual image URL -->
+    <meta property="og:url" content="https://infotekhealthcare.com/" /> <!-- Replace with your actual URL -->
+    <meta name="keywords"
+        content="Infotek Healthcare, medical coding, billing services, top medical billing company, healthcare solutions, revenue cycle management, medical billing software, coding compliance" />
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Infotek Healthcare" />
+    <meta name="twitter:description"
+        content="Innovative healthcare solutions, specializing in coding and billing services." />
+    <meta name="twitter:image" content="URL_to_image" /> <!-- Replace with actual image URL -->
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/bootstrap/css/bootstrap.min.css') }}" />
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/animate/animate.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/animate/custom-animate.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/fontawesome/css/all.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/jarallax/jarallax.css') }}" />
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='assets/vendors/jquery-magnific-popup/jquery.magnific-popup.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/odometer/odometer.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/swiper/swiper.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/bixola-icons/style.css') }}" />
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='assets/vendors/owl-carousel/owl.carousel.min.css') }}" />
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='assets/vendors/owl-carousel/owl.theme.default.min.css') }}" />
+    <link rel="stylesheet"
+        href="{{ url_for('static', filename='assets/vendors/bootstrap-select/css/bootstrap-select.min.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/jquery-ui/jquery-ui.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/vendors/timepicker/timePicker.css') }}" />
+
+    <!-- Template styles -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/bixola.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/bixola-responsive.css') }}" />
+
+
+</head>
+
+<body class="custom-cursor">
+
+    <!-- <div class="custom-cursor__cursor"></div>
+    <div class="custom-cursor__cursor-two"></div> -->
+
+
+
+
+
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+    <!-- /.preloader -->
+
+
+    <div class="page-wrapper">
+        <header class="main-header">
+            <!-- <div class="main-header__top">
+                <div class="container">
+                    <div class="main-header__top-inner">
+                        <div class="main-header__top-left">
+                            <ul class="list-unstyled main-header__contact-list">
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-clock"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>Mon to Sat: 9:00am to 6:00pm</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p><a href="info@infotekhealthcare.com">info@infotekhealthcare.com</a>
+                                        </p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-map-marker"></i>
+                                    </div>
+                                    <div class="text">
+                                        <p>Vellore,TamilNadu</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="main-header__top-right">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <nav class="main-menu">
+                <div class="main-menu__wrapper">
+                    <div class="container">
+                        <div class="main-menu__wrapper-inner">
+                            <div class="main-menu__logo">
+                                <a href="{{ url_for('index') }}"><img
+                                        src="{{ url_for('static', filename='assets/images/Infoteklogo.svg') }}"
+                                        alt="Infotek Logo"></a>
+                            </div>
+                            <div class="main-menu__main-menu-box">
+                                <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
+                                <ul class="main-menu__list">
+                                    <li class="current megamenu">
+                                        <a href="{{ url_for('index') }}">Home</a>
+
+                                    </li>
+
+
+                                    <li class="dropdown">
+                                        <a href="#">Services</a>
+                                        <ul class="sub-menu">
+                                            <li class="dropdown">
+                                                <a href="{{ url_for('medical_coding') }}">Medical Coding</a>
+
+                                            </li>
+                                            <li class="dropdown">
+                                                <a href="{{ url_for('medical_billing') }}">Medical Billing</a>
+
+                                            </li>
+
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="{{ url_for('about') }}">About</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="{{ url_for('techdriven') }}">Tech-Driven RCM</a>
+
+                                    </li>
+                                    <li>
+
+                                        <a href="{{ url_for('carrer') }}">Carrers</a>
+
+                                    </li>
+                                    <li>
+                                        <a href="{{ url_for('contact') }}">Contact</a>
+
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main-menu__right">
+                                <div class="main-menu__call">
+                                    <div class="main-menu__call-icon">
+                                        <span class="icon-phone"></span>
+                                    </div>
+                                    <div class="main-menu__call-content">
+                                        <p class="main-menu__call-sub-title">Need help?</p>
+                                        <h5 class="main-menu__call-number"><a href="tel:9384939396">+919384939396</a>
+                                        </h5>
+                                    </div>
+                                </div>
+                                <div class="main-menu__btn-box">
+                                    <a href="{{ url_for('contact') }}" class="main-menu__btn thm-btn">Get Consulting</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="stricky-header stricked-menu main-menu main-menu-four">
+            <div class="sticky-header__content"></div><!-- /.sticky-header__content -->
+        </div><!-- /.stricky-header -->
+
+
+        <!--Page Header Start-->
+        <section class="page-header">
+            <!-- <div class="page-header__bg"
+                style="background-image: url({{ url_for('static', filename='assets/images/backgrounds/page-header-bg.jpg') }});">
+            </div> -->
+            <div class="page-header__bg">
+                <style>
+                    .page-header {
+                        background-image: url("{{ url_for('static', filename='assets/images/backgrounds/medicalBilling.webp') }}");
+                    }
+                </style>
+            </div>
+
+            <!-- <div class="page-header__shape-1 float-bob-y">
+                <img src="{{ url_for('static', filename='assets/images/shapes/page-header-shape-1.png') }}" alt="">
+            </div>
+            <div class="page-header__shape-2 float-bob-x">
+                <img src="{{ url_for('static', filename='assets/images/shapes/page-header-shape-2.png') }}" alt="">
+            </div>
+            <div class="page-header__shape-3 float-bob-y">
+                <img src="{{ url_for('static', filename='assets/images/shapes/page-header-shape-3.png') }}" alt="">
+            </div>
+            <div class="page-header__shape-4 float-bob-x">
+                <img src="{{ url_for('static', filename='assets/images/shapes/page-header-shape-4.png') }}" alt="">
+            </div> -->
+            <div class="container">
+                <div class="page-header__inner">
+                    <h2>Medical Billing</h2>
+                    <ul class="thm-breadcrumb list-unstyled">
+                        <li><a href="">Services</a></li>
+                        <li><span class="icon-down-arrow"></span></li>
+                        <li>Medical Billing</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!--Page Header End-->
+
+        <!--Portfolio Details Start-->
+        <!-- <section class="portfolio-details">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+
+                    </div>
+                    <div class="portfolio-details__bottom">
+                        <div class="row">
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left">
+                                    <p class="portfolio-details__sub-title"></p>
+                                    <h3 class="portfolio-details__title " style="color: #4425f5;">Medical Billing</h3>
+                                    <p class="portfolio-details__text-1">Our comprehensive medical billing services
+                                        streamline the
+                                        entire billing process, ensuring timely payments and reducing
+                                        errors that can delay reimbursements.</p>
+                                    <h5 class="fw-bold" style="margin-top: 10px;margin-bottom: 10px;">Overview:</h5>
+                                    <p class="portfolio-details__text-1" style="margin-bottom: 10px;">
+                                        We manage all aspects of
+                                        the medical billing
+                                        process, from
+                                        submitting claims to tracking payments. By preparing bills with
+                                        accuracy and submitting them promptly, we minimize delays in
+                                        reimbursement. Unpaid claims are closely monitored, rejections
+                                        are addressed immediately, and continuous support is provided
+                                        to optimize your billing operations. With a strong focus on
+                                        reducing administrative burdens, we help maintain a consistent
+                                        and steady flow of revenue for your practice.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left">
+                                    <p class="portfolio-details__sub-title"></p>
+                                    <h5 class="fw-bold">Key Benefits:</h5>
+                                    <p class="portfolio-details__text-1">
+                                    <ul class="circleType">
+                                        <li>Prompt submission of accurate bills to avoid delays</li>
+                                        <li> Immediate follow-up on unpaid or rejected claims
+                                        </li>
+                                        <li>Reduced administrative burdens for healthcare providers</li>
+                                        <li>Regular updates on billing statuses for full transparency</li>
+                                        <li>Support for improving cash flow and financial performance</li>
+                                    </ul>
+                                    </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+
+        <section class="portfolio-details1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                    </div>
+                    <div class="portfolio-details__bottom1">
+                        <div class="row">
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left1">
+                                    <p class="portfolio-details__sub-title"></p>
+                                    <h3 class="portfolio-details__title1 fw-bold "
+                                        style="color: #4425f5; padding-top: 10px;">
+                                        Medical Billing</h3>
+                                    <p class="portfolio-details__text-11">Our comprehensive medical billing services
+                                        streamline the
+                                        entire billing process, ensuring timely payments and reducing
+                                        errors that can delay reimbursements.</p>
+                                    <h5 class="fw-bold" style="padding-top: 10px;">Overview:</h5>
+                                    <p class="portfolio-details__text-11"> We manage all aspects of
+                                        the medical billing
+                                        process, from
+                                        submitting claims to tracking payments. By preparing bills with
+                                        accuracy and submitting them promptly, we minimize delays in
+                                        reimbursement. Unpaid claims are closely monitored, rejections
+                                        are addressed immediately, and continuous support is provided
+                                        to optimize your billing operations. With a strong focus on
+                                        reducing administrative burdens, we help maintain a consistent
+                                        and steady flow of revenue for your practice.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left1">
+                                    <h5 class="fw-bold" style="padding-top: 10px;">Key Benefits:</h5>
+                                    <p class="portfolio-details__text-11">
+                                    <ul class="circleType">
+                                        <li>Prompt submission of accurate bills to avoid delays</li>
+                                        <li> Immediate follow-up on unpaid or rejected claims
+                                        </li>
+                                        <li>Reduced administrative burdens for healthcare providers</li>
+                                        <li>Regular updates on billing statuses for full transparency</li>
+                                        <li>Support for improving cash flow and financial performance</li>
+                                    </ul>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Portfolio Details End-->
+
+
+        <!--claims Management -->
+
+        <!-- <section class="portfolio-details" id="claims_management">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                    </div>
+                    <div class="portfolio-details__bottom">
+                        <div class="row">
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left">
+                                    <p class="portfolio-details__sub-title"></p>
+                                    <h3 class="portfolio-details__title " style="color: #4425f5;">Claims Management</h3>
+                                    <p class="portfolio-details__text-1">Our proactive approach ensures that claims are
+                                        processed
+                                        quickly and any rejections or denials are addressed
+                                        immediately to prevent revenue loss.</p>
+                                    <h5 class="fw-bold" style="padding-top: 23px;">Overview:</h5>
+                                    <p class="portfolio-details__text-1">We take a hands-on approach to claims
+                                        management, ensuring
+                                        timely submission and constant follow-up on every claim. Our
+                                        team actively monitors claim statuses, resolves denials quickly,
+                                        and appeals to rejected claims to maximize reimbursements.
+                                        By focusing on reducing the turnaround time for claims
+                                        processing, we help you maintain a smooth revenue flow.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left">
+                                    <p class="portfolio-details__sub-title"></p>
+                                    <h5 class="fw-bold">Key Benefits:</h3>
+                                        <p class="portfolio-details__text-1">
+                                        <ul class="circleType">
+                                            <li>Prompt and accurate claim submissions</li>
+                                            <li> Immediate resolution of denials and rejections
+                                            </li>
+                                            <li>Decreased days in accounts receivable</li>
+                                            <li>Full transparency with regular claim status updates</li>
+
+                                        </ul>
+                                        </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+
+
+        <section class="portfolio-details1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                    </div>
+                    <div class="portfolio-details__bottom1">
+                        <div class="row">
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left1">
+                                    <p class="portfolio-details__sub-title"></p>
+                                    <h3 class="portfolio-details__title1 fw-bold "
+                                        style="color: #4425f5; padding-top: 10px;">
+                                        Claims Management</h3>
+                                    <p class="portfolio-details__text-11">Our proactive approach ensures that claims are
+                                        processed
+                                        quickly and any rejections or denials are addressed
+                                        immediately to prevent revenue loss.</p>
+                                    <h5 class="fw-bold" style="padding-top: 10px;">Overview:</h5>
+                                    <p class="portfolio-details__text-11"> We take a hands-on approach to claims
+                                        management, ensuring
+                                        timely submission and constant follow-up on every claim. Our
+                                        team actively monitors claim statuses, resolves denials quickly,
+                                        and appeals to rejected claims to maximize reimbursements.
+                                        By focusing on reducing the turnaround time for claims
+                                        processing, we help you maintain a smooth revenue flow.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left1">
+                                    <h5 class="fw-bold" style="padding-top: 10px;">Key Benefits:</h5>
+                                    <p class="portfolio-details__text-11">
+                                    <ul class="circleType">
+                                        <li>Prompt and accurate claim submissions</li>
+                                        <li> Immediate resolution of denials and rejections
+                                        </li>
+                                        <li>Decreased days in accounts receivable</li>
+                                        <li>Full transparency with regular claim status updates</li>
+
+                                    </ul>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--claims Management end  -->
+
+        <!--payment Posting-->
+        <!-- <section class="portfolio-details" id="payment_posting">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                    </div>
+                    <div class="portfolio-details__bottom">
+                        <div class="row">
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left">
+                                    <p class="portfolio-details__sub-title"></p>
+                                    <h3 class="portfolio-details__title " style="color: #4425f5;">Payment Posting
+                                    </h3>
+                                    <p class="portfolio-details__text-1">Our payment posting service ensures accurate
+                                        and timely
+                                        posting of payments from both insurance companies and
+                                        patients, while efficiently identifying and resolving any payment
+                                        discrepancies.</p>
+                                    <h5 class="fw-bold" style="padding-top: 23px;">Overview:</h5>
+                                    <p class="portfolio-details__text-1">Our payment posting service ensures that every
+                                        payment is
+                                        accurately posted to patient accounts, allowing you to stay on
+                                        top of your finances. We swiftly identify discrepancies, such as
+                                        underpayments, and address them to ensure that your practice
+                                        receives the correct amount. This service is designed to keep
+                                        your financial records clean and help you avoid any revenue
+                                        loss.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left">
+                                    <p class="portfolio-details__sub-title"></p>
+                                    <h5 class="fw-bold">Key Benefits:</h3>
+                                        <p class="portfolio-details__text-1">
+                                        <ul class="circleType">
+                                            <li>Accurate and timely recording of payments</li>
+                                            <li> Immediate identification and resolution of payment
+                                                discrepancies
+                                            </li>
+                                            <li> Improved financial transparency and reporting</li>
+                                            <li>Efficient reconciliation of patient and insurance payments</li>
+
+                                        </ul>
+                                        </p>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </section> -->
+
+
+        <section class="portfolio-details1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                    </div>
+                    <div class="portfolio-details__bottom1">
+                        <div class="row">
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left1">
+                                    <p class="portfolio-details__sub-title"></p>
+                                    <h3 class="portfolio-details__title1 fw-bold "
+                                        style="color: #4425f5; padding-top: 10px;">
+                                        Payment Posting</h3>
+                                    <p class="portfolio-details__text-11">Our payment posting service ensures accurate
+                                        and timely
+                                        posting of payments from both insurance companies and
+                                        patients, while efficiently identifying and resolving any payment
+                                        discrepancies.</p>
+                                    <h5 class="fw-bold" style="padding-top: 10px;">Overview:</h5>
+                                    <p class="portfolio-details__text-11"> Our payment posting service ensures that
+                                        every
+                                        payment is
+                                        accurately posted to patient accounts, allowing you to stay on
+                                        top of your finances. We swiftly identify discrepancies, such as
+                                        underpayments, and address them to ensure that your practice
+                                        receives the correct amount. This service is designed to keep
+                                        your financial records clean and help you avoid any revenue
+                                        loss.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left1">
+                                    <h5 class="fw-bold" style="padding-top: 10px;">Key Benefits:</h5>
+                                    <p class="portfolio-details__text-11">
+                                    <ul class="circleType">
+                                        <li>Accurate and timely recording of payments</li>
+                                        <li> Immediate identification and resolution of payment
+                                            discrepancies
+                                        </li>
+                                        <li> Improved financial transparency and reporting</li>
+                                        <li>Efficient reconciliation of patient and insurance payments</li>
+
+                                    </ul>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--payment posting end  -->
+
+        <!--insurenece Posting-->
+        <!-- <section class="portfolio-details" id="insurancemodel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                    </div>
+                    <div class="portfolio-details__bottom">
+                        <div class="row">
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left">
+                                    <p class="portfolio-details__sub-title"></p>
+                                    <h3 class="portfolio-details__title " style="color: #4425f5;">Insurance Verification
+                                    </h3>
+                                    <p class="portfolio-details__text-1">Our insurance verification service ensures that
+                                        patient
+                                        coverage is confirmed before treatment, eliminating surprises
+                                        for both your practice and patients.</p>
+                                    <h5 class="fw-bold">Overview:</h5>
+                                    <p class="portfolio-details__text-1">Before any treatment begins, our insurance
+                                        verification team
+                                        confirms patient eligibility, benefits, and co-pay requirements.
+                                        This ensures that both your practice and the patient understand
+                                        their financial responsibilities in advance. Our verification
+                                        process minimizes the risk of claim denials due to coverage
+                                        issues and helps maintain positive patient experiences.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left">
+                                    <p class="portfolio-details__sub-title"></p>
+                                    <h5 class="fw-bold">Key Benefits:</h5>
+                                    <p class="portfolio-details__text-1">
+                                    <ul class="circleType">
+                                        <li>Verified coverage before treatment begins</li>
+                                        <li> Reduced claim denials due to eligibility issues
+                                        </li>
+                                        <li>Increased patient satisfaction and transparency</li>
+                                        <li>Streamlined insurance verification process to save time</li>
+
+                                    </ul>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+    </section> -->
+
+
+        <section class="portfolio-details1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                    </div>
+                    <div class="portfolio-details__bottom1">
+                        <div class="row">
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left1">
+                                    <p class="portfolio-details__sub-title"></p>
+                                    <h3 class="portfolio-details__title1 fw-bold "
+                                        style="color: #4425f5; padding-top: 10px;">
+                                        Insurance Verification</h3>
+                                    <p class="portfolio-details__text-11">Our insurance verification service ensures
+                                        that
+                                        patient
+                                        coverage is confirmed before treatment, eliminating surprises
+                                        for both your practice and patients.</p>
+                                    <h5 class="fw-bold" style="padding-top: 10px;">Overview:</h5>
+                                    <p class="portfolio-details__text-11"> Before any treatment begins, our insurance
+                                        verification team
+                                        confirms patient eligibility, benefits, and co-pay requirements.
+                                        This ensures that both your practice and the patient understand
+                                        their financial responsibilities in advance. Our verification
+                                        process minimizes the risk of claim denials due to coverage
+                                        issues and helps maintain positive patient experiences.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left1">
+                                    <h5 class="fw-bold" style="padding-top: 10px;">Key Benefits:</h5>
+                                    <p class="portfolio-details__text-11">
+                                    <ul class="circleType">
+                                        <li>Verified coverage before treatment begins</li>
+                                        <li> Reduced claim denials due to eligibility issues
+                                        </li>
+                                        <li>Increased patient satisfaction and transparency</li>
+                                        <li>Streamlined insurance verification process to save time</li>
+
+                                    </ul>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!--Insurence verifictaion end  -->
+
+        <!--patient billing -->
+        <!-- <section class="portfolio-details" id="patientmodel">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                </div>
+                <div class="portfolio-details__bottom">
+                    <div class="row">
+                        <div class="col-xl-10 col-lg-9">
+                            <div class="portfolio-details__left">
+                                <p class="portfolio-details__sub-title"></p>
+                                <h3 class="portfolio-details__title " style="color: #4425f5;">Patient Billing and
+                                    Collections</h3>
+                                <p class="portfolio-details__text-1">We manage the entire process, from issuing
+                                    statements to
+                                    offering comprehensive billing support, ensuring smooth
+                                    collections while fostering strong patient relationships.</p>
+                                <h5 class="fw-bold" style="padding-top: 23px;">Overview:</h5>
+                                <p class="portfolio-details__text-1">Our patient billing and collections service
+                                    takes the hassle out
+                                    of managing patient payments. We provide clear,
+                                    easy-to-understand billing statements, offer various payment
+                                    methods, and provide direct support for patients with billing
+                                    inquiries. By maintaining consistent follow-ups and a
+                                    patient-friendly approach, we help you secure timely payments
+                                    without compromising patient relationships.</p>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xl-10 col-lg-9">
+                            <div class="portfolio-details__left">
+                                <p class="portfolio-details__sub-title"></p>
+                                <h5 class="fw-bold">Key Benefits:</h5>
+                                <p class="portfolio-details__text-1">
+                                <ul class="circleType">
+                                    <li>Clear and transparent billing statements</li>
+                                    <li> Multiple payment options for patient convenience
+                                    </li>
+                                    <li> Proactive follow-up on outstanding balances</li>
+                                    <li>Improved patient satisfaction and retention through
+                                        supportive billing practices</li>
+
+                                </ul>
+                                </p>
+
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section> -->
+
+
+
+        <section class="portfolio-details1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                    </div>
+                    <div class="portfolio-details__bottom1">
+                        <div class="row">
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left1">
+                                    <p class="portfolio-details__sub-title"></p>
+                                    <h3 class="portfolio-details__title1 fw-bold "
+                                        style="color: #4425f5; padding-top: 10px;">
+                                        Patient Billing and
+                                        Collections</h3>
+                                    <p class="portfolio-details__text-11">We manage the entire process, from issuing
+                                        statements to
+                                        offering comprehensive billing support, ensuring smooth
+                                        collections while fostering strong patient relationships.</p>
+                                    <h5 class="fw-bold" style="padding-top: 10px;">Overview:</h5>
+                                    <p class="portfolio-details__text-11">Our patient billing and collections service
+                                        takes the hassle out
+                                        of managing patient payments. We provide clear,
+                                        easy-to-understand billing statements, offer various payment
+                                        methods, and provide direct support for patients with billing
+                                        inquiries. By maintaining consistent follow-ups and a
+                                        patient-friendly approach, we help you secure timely payments
+                                        without compromising patient relationships.</p>
+                                </div>
+                            </div>
+
+
+                            <div class="col-xl-10 col-lg-9">
+                                <div class="portfolio-details__left1">
+                                    <h5 class="fw-bold" style="padding-top: 10px;">Key Benefits:</h5>
+                                    <p class="portfolio-details__text-11">
+                                    <ul class="circleType">
+                                        <li>Clear and transparent billing statements</li>
+                                        <li> Multiple payment options for patient convenience
+                                        </li>
+                                        <li> Proactive follow-up on outstanding balances</li>
+                                        <li>Improved patient satisfaction and retention through
+                                            supportive billing practices</li>
+
+                                    </ul>
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--patient billing  end  -->
+
+
+        <!--Site Footer Start-->
+        <footer class="site-footer">
+            <!-- <div class="site-footer__shape-1 img-bounce">
+            <img src="assets/images/shapes/site-footer-shape-1.png" alt="">
+        </div> -->
+            <div class="site-footer__shape-2 float-bob-y">
+                <img src="{{ url_for('static', filename='assets/images/shapes/site-footer-shape-2.png') }}" alt="">
+
+            </div>
+            <div class="container">
+                <div class="site-footer__top">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
+                            <div class="footer-widget__column footer-widget__about">
+                                <div class="footer-widget__logo">
+                                    <a href="{{ url_for('index') }}">
+
+                                        <img src="{{ url_for('static', filename='assets/images/Infoteklogo.svg') }}"
+                                            alt="">
+                                    </a>
+                                </div>
+                                <p class="footer-widget__about-text" style="padding-left: 30px;">INFOTEK HEALTHCARE</p>
+                                <div class="site-footer__social" style="padding-left: 30px;">
+                                    <!-- <a href="#"><i class="fab fa-facebook"></i></a> -->
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <!-- <a href="#"><i class="fab fa-instagram"></i></a> -->
+                                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                            <div class="footer-widget__column footer-widget__company">
+                                <div class="footer-widget__title-box">
+                                    <h3 class="footer-widget__title">Company</h3>
+                                </div>
+                                <ul class="footer-widget__company-list list-unstyled">
+                                    <li><a href="{{ url_for('medical_billing') }}">Medical Billing</a></li>
+                                    <li><a href="{{ url_for('medical_coding') }}">Medical Coding
+                                        </a></li>
+                                    <!-- <li><a href="financial-advices.html">Financial advices
+                                    </a></li>
+                                <li><a href="insurance-strategy.html">Insurance strategy
+                                    </a></li> -->
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                            <div class="footer-widget__column footer-widget__contact">
+                                <div class="footer-widget__title-box">
+                                    <h3 class="footer-widget__title">You’ve Questions</h3>
+                                </div>
+                                <ul class="footer-widget__contact-list list-unstyled">
+                                    <li>
+                                        <div class="icon">
+                                            <span class="fas fa-map-marker-alt"></span>
+                                        </div>
+                                        <div class="content">
+                                            <h3>Location</h3>
+                                            <p>No5,Arjunan Tower,Arani Road,Kamatchi Amman Kovil
+                                                Backside</p>
+                                            <p>Sankaranpalayam,Vellore</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="fas fa-phone"></span>
+                                        </div>
+                                        <div class="content">
+                                            <h3>Contact Us</h3>
+                                            <p><a href="tel: +13073690805">US: +13073690805</a></p>
+                                            <p><a href="tel:+919384939396">IND: +919384939396</a></p>
+
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="icon">
+                                            <span class="fas fa-paper-plane"></span>
+                                        </div>
+                                        <div class="content">
+                                            <h3>Send a mail</h3>
+                                            <p><a
+                                                    href="mailto:info@infotekhealthcare.com">info@infotekhealthcare.com</a>
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="400ms">
+                            <div class="footer-widget__column footer-widget__newsletter">
+                                <div class="footer-widget__title-box">
+                                    <h3 class="footer-widget__title">Newsletter</h3>
+                                </div>
+                                <p class="footer-widget__newsletter-text">"Stay ahead with the latest innovations in
+                                    healthcare technology! Subscribe to the InfoTek Healthcare newsletter for insights,
+                                    industry trends, and expert solutions delivered to your inbox.</p>
+                                <form class="footer-widget__newsletter-form mc-form" data-url="MC_FORM_URL"
+                                    novalidate="novalidate">
+                                    <div class="footer-widget__newsletter-form-input-box">
+                                        <input type="email" placeholder="Enter email address" name="EMAIL">
+                                        <button type="submit" class="footer-widget__newsletter-btn"><span
+                                                class="fas fa-paper-plane"></span></button>
+                                    </div>
+                                </form>
+                                <div class="mc-form__response"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="site-footer__bottom">
+                <div class="container">
+                    <div class="site-footer__bottom-inner">
+                        <p class="site-footer__bottom-text">© Copyright infotekhealthcare 2025. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--Site Footer End-->
+
+
+    </div><!-- /.page-wrapper -->
+
+
+    <div class="mobile-nav__wrapper">
+        <div class="mobile-nav__overlay mobile-nav__toggler"></div>
+        <!-- /.mobile-nav__overlay -->
+        <div class="mobile-nav__content">
+            <span class="mobile-nav__close mobile-nav__toggler"><i class="fa fa-times"></i></span>
+
+            <div class="logo-box">
+                <a href="{{ url_for('index') }}" aria-label="logo image">
+
+                    <img src="{{ url_for('static', filename='assets/images/Infoteklogo.svg') }}" width="145" alt="">
+
+
+            </div>
+            <!-- /.logo-box -->
+            <div class="mobile-nav__container"></div>
+            <!-- /.mobile-nav__container -->
+
+            <ul class="mobile-nav__contact list-unstyled">
+                <li>
+                    <i class="fa fa-envelope"></i>
+                    <a href="mailto:info@infotekhealthcare.com">info@infotekhealthcare.com</a>
+                </li>
+                <li>
+                    <i class="fa fa-phone-alt"></i>
+                    <a href="tel:+919384939396">+919384939396</a>
+                </li>
+            </ul><!-- /.mobile-nav__contact -->
+            <div class="mobile-nav__top">
+                <div class="mobile-nav__social">
+                    <a href="#" class="fab fa-twitter"></a>
+                    <!-- <a href="#" class="fab fa-facebook-square"></a> -->
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <!-- <a href="#" class="fab fa-instagram"></a> -->
+                </div><!-- /.mobile-nav__social -->
+            </div><!-- /.mobile-nav__top -->
+
+
+
+        </div>
+        <!-- /.mobile-nav__content -->
+    </div>
+    <!-- /.mobile-nav__wrapper -->
+
+    <div class="search-popup">
+        <div class="search-popup__overlay search-toggler"></div>
+        <!-- /.search-popup__overlay -->
+        <div class="search-popup__content">
+            <form action="#">
+                <label for="search" class="sr-only">search here</label><!-- /.sr-only -->
+                <input type="text" id="search" placeholder="Search Here..." />
+                <button type="submit" aria-label="search submit" class="thm-btn">
+                    <i class="icon-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <!-- /.search-popup__content -->
+    </div>
+    <!-- /.search-popup -->
+
+    <a href="#" data-target="html" class="scroll-to-target scroll-to-top"><i class="icon-right-arrow"></i></a>
+
+
+    <script src="{{ url_for('static', filename='assets/vendors/jquery/jquery-3.6.0.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendors/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendors/jarallax/jarallax.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendors/jquery-appear/jquery.appear.min.js') }}"></script>
+    <script
+        src="{{ url_for('static', filename='assets/vendors/jquery-circle-progress/jquery.circle-progress.min.js') }}"></script>
+    <script
+        src="{{ url_for('static', filename='assets/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendors/jquery-validate/jquery.validate.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendors/odometer/odometer.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendors/swiper/swiper.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendors/wnumb/wNumb.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendors/wow/wow.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendors/isotope/isotope.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendors/owl-carousel/owl.carousel.min.js') }}"></script>
+    <script
+        src="{{ url_for('static', filename='assets/vendors/bootstrap-select/js/bootstrap-select.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendors/jquery-ui/jquery-ui.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendors/timepicker/timePicker.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendors/circleType/jquery.circleType.js') }}"></script>
+    <script src="{{ url_for('static', filename='assets/vendors/circleType/jquery.lettering.min.js') }}"></script>
+
+    <!-- Template js -->
+    <script src="{{ url_for('static', filename='assets/js/bixola.js') }}"></script>
+
+</body>
+
+</html>
