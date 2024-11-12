@@ -29,23 +29,24 @@ with app.app_context():
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index.html',active_page='home')
+
 
 @app.route('/medical_billing')
 def medical_billing():
-    return render_template('medical billing.html')
+    return render_template('medical billing.html',active_page='medical_billing')
 
 @app.route('/medical_coding')
 def medical_coding():
-    return render_template('medical coding.html')
+    return render_template('medical coding.html',active_page='medical_coding')
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    return render_template('about.html',active_page='about')
 
 @app.route('/techdriven')
 def techdriven():
-    return render_template('techDriven.html')
+    return render_template('techDriven.html',active_page='techdriven')
 
 @app.route('/contact', methods=['GET', 'POST'])
 def contact():
@@ -84,19 +85,21 @@ def contact():
             Message: {message}
             """
             mail.send(msg)
-            
+            flash('Your message has been sent successfully!', 'success')
             return redirect(url_for('index'))
+           
+
         except Exception as e:
             
             db.session.rollback()
             flash('There was an error sending your message. Please try again.', 'error')
 
-    return render_template('contact.html')
+    return render_template('contact.html',active_page='contact')
 
 
 @app.route('/carrer')
 def carrer():
-    return render_template('carrer.html')
+    return render_template('carrer.html',active_page='carrer')
 
 if __name__ == '__main__':
     app.run(debug=True)

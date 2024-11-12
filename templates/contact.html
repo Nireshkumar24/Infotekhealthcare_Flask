@@ -150,7 +150,7 @@
                             <div class="main-menu__main-menu-box">
                                 <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                 <ul class="main-menu__list">
-                                    <li class="current megamenu">
+                                    <li>
                                         <a href="{{ url_for('index') }}">Home</a>
 
                                     </li>
@@ -183,7 +183,7 @@
                                         <a href="{{ url_for('carrer') }}">Carrers</a>
 
                                     </li>
-                                    <li>
+                                    <li class="{% if active_page == 'contact' %}current{% endif %}">
                                         <a href="{{ url_for('contact') }}">Contact</a>
 
                                     </li>
@@ -477,7 +477,11 @@
 
                                         </div>
                                         <div class="content">
-                                            <h3>Location</h3>
+                                            <h3>US</h3>
+                                            <p>30 N Gould St Ste R,
+                                                Sheridan, WY 82801.</p>
+                                            <p></p>
+                                            <h3>India</h3>
                                             <p>No5,Arjunan Tower,Arani Road,Kamatchi Amman Kovil
                                                 Backside</p>
                                             <p>Sankaranpalayam,Vellore</p>

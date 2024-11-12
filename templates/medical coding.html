@@ -142,16 +142,18 @@
                             <div class="main-menu__main-menu-box">
                                 <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                 <ul class="main-menu__list">
-                                    <li class="current megamenu">
+                                    <li>
                                         <a href="{{ url_for('index') }}">Home</a>
 
                                     </li>
 
 
-                                    <li class="dropdown">
+                                    <li
+                                        class="dropdown dropdown {% if active_page == 'medical_coding' or active_page == 'medical_billing' %}current{% endif %}">
                                         <a href="#">Services</a>
                                         <ul class="sub-menu">
-                                            <li class="dropdown">
+                                            <li
+                                                class="dropdown {% if active_page == 'medical_coding' %}current{% endif %}">
                                                 <a href="{{ url_for('medical_coding') }}">Medical Coding</a>
 
                                             </li>
@@ -312,8 +314,7 @@
                             <div class="col-xl-10 col-lg-9">
                                 <div class="portfolio-details__left1">
                                     <!-- <p class="portfolio-details__sub-title"></p> -->
-                                    <h3 class="portfolio-details__title1 fw-bold "
-                                        style="color: #4425f5; padding-top: 10px;">
+                                    <h3 class="portfolio-details__title1 fw-bold " style="padding-top: 10px;">
                                         Medical Coding</h3>
                                     <p class="portfolio-details__text-11">By leveraging advanced coding systems and
                                         expert review
@@ -424,8 +425,7 @@
                             <div class="col-xl-10 col-lg-9">
                                 <div class="portfolio-details__left1">
                                     <!-- <p class="portfolio-details__sub-title"></p> -->
-                                    <h3 class="portfolio-details__title1 fw-bold "
-                                        style="color: #4425f5; padding-top: 10px;">
+                                    <h3 class="portfolio-details__title1 fw-bold " style=" padding-top: 10px;">
                                         Emergency Department
                                         Coding</h3>
                                     <p class="portfolio-details__text-11">Accurate coding for emergency services to
@@ -534,8 +534,7 @@
                             <div class="col-xl-10 col-lg-9">
                                 <div class="portfolio-details__left1">
                                     <p class="portfolio-details__sub-title"></p>
-                                    <h3 class="portfolio-details__title1 fw-bold "
-                                        style="color: #4425f5; padding-top: 10px;">
+                                    <h3 class="portfolio-details__title1 fw-bold " style=" padding-top: 10px;">
                                         Evaluation and
                                         Management Coding</h3>
                                     <p class="portfolio-details__text-11">Expert E&M coding services to ensure
@@ -648,8 +647,7 @@
                             <div class="col-xl-10 col-lg-9">
                                 <div class="portfolio-details__left1">
                                     <p class="portfolio-details__sub-title"></p>
-                                    <h3 class="portfolio-details__title1 fw-bold "
-                                        style="color: #4425f5; padding-top: 10px;">
+                                    <h3 class="portfolio-details__title1 fw-bold " style=" padding-top: 10px;">
                                         Hierarchical Condition
                                         Category
                                         (HCC) Coding</h3>
@@ -759,8 +757,7 @@
                             <div class="col-xl-10 col-lg-9">
                                 <div class="portfolio-details__left1">
                                     <p class="portfolio-details__sub-title"></p>
-                                    <h3 class="portfolio-details__title1 fw-bold "
-                                        style="color: #4425f5; padding-top: 10px;">
+                                    <h3 class="portfolio-details__title1 fw-bold " style=" padding-top: 10px;">
                                         Specialized Surgical
                                         Coding</h3>
                                     <p class="portfolio-details__text-11">Advanced surgical coding expertise to ensure
@@ -869,8 +866,7 @@
                             <div class="col-xl-10 col-lg-9">
                                 <div class="portfolio-details__left1">
                                     <p class="portfolio-details__sub-title"></p>
-                                    <h3 class="portfolio-details__title1 fw-bold  "
-                                        style="color: #4425f5; padding-top: 10px;">
+                                    <h3 class="portfolio-details__title1 fw-bold  " style=" padding-top: 10px;">
                                         Intreventional
                                         Radiology Coding</h3>
                                     <p class="portfolio-details__text-11">Accurate coding for interventional radiology
@@ -980,8 +976,7 @@
                             <div class="col-xl-10 col-lg-9">
                                 <div class="portfolio-details__left1">
                                     <p class="portfolio-details__sub-title"></p>
-                                    <h3 class="portfolio-details__title1 fw-bold "
-                                        style="color: #4425f5; padding-top: 10px;">
+                                    <h3 class="portfolio-details__title1 fw-bold " style=" padding-top: 10px;">
                                         Ancillary Coding</h3>
                                     <p class="portfolio-details__text-11">Comprehensive coding for ancillary services to
                                         ensure all
@@ -1088,8 +1083,7 @@
                             <div class="col-xl-10 col-lg-9">
                                 <div class="portfolio-details__left1">
                                     <p class="portfolio-details__sub-title"></p>
-                                    <h3 class="portfolio-details__title1 fw-bold "
-                                        style="color: #4425f5; padding-top: 10px;">
+                                    <h3 class="portfolio-details__title1 fw-bold " style=" padding-top: 10px;">
                                         Anesthesia Medical
                                         Coding</h3>
                                     <p class="portfolio-details__text-11">Precise anesthesia coding that ensures
@@ -1191,7 +1185,11 @@
                                             <span class="fas fa-map-marker-alt"></span>
                                         </div>
                                         <div class="content">
-                                            <h3>Location</h3>
+                                            <h3>US</h3>
+                                            <p>30 N Gould St Ste R,
+                                                Sheridan, WY 82801.</p>
+                                            <p></p>
+                                            <h3>India</h3>
                                             <p>No5,Arjunan Tower,Arani Road,Kamatchi Amman Kovil
                                                 Backside</p>
                                             <p>Sankaranpalayam,Vellore</p>

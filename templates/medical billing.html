@@ -144,20 +144,22 @@
                             <div class="main-menu__main-menu-box">
                                 <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                 <ul class="main-menu__list">
-                                    <li class="current megamenu">
+                                    <li>
                                         <a href="{{ url_for('index') }}">Home</a>
 
                                     </li>
 
 
-                                    <li class="dropdown">
+                                    <li
+                                        class="dropdown {% if active_page == 'medical_coding' or active_page == 'medical_billing' %}current{% endif %}">
                                         <a href="#">Services</a>
                                         <ul class="sub-menu">
                                             <li class="dropdown">
                                                 <a href="{{ url_for('medical_coding') }}">Medical Coding</a>
 
                                             </li>
-                                            <li class="dropdown">
+                                            <li
+                                                class="dropdown {% if active_page == 'medical_billing' %}current{% endif %}">
                                                 <a href="{{ url_for('medical_billing') }}">Medical Billing</a>
 
                                             </li>
@@ -316,8 +318,7 @@
                             <div class="col-xl-10 col-lg-9">
                                 <div class="portfolio-details__left1">
                                     <p class="portfolio-details__sub-title"></p>
-                                    <h3 class="portfolio-details__title1 fw-bold "
-                                        style="color: #4425f5; padding-top: 10px;">
+                                    <h3 class="portfolio-details__title1 fw-bold " style=" padding-top: 10px;">
                                         Medical Billing</h3>
                                     <p class="portfolio-details__text-11">Our comprehensive medical billing services
                                         streamline the
@@ -428,8 +429,7 @@
                             <div class="col-xl-10 col-lg-9">
                                 <div class="portfolio-details__left1">
                                     <p class="portfolio-details__sub-title"></p>
-                                    <h3 class="portfolio-details__title1 fw-bold "
-                                        style="color: #4425f5; padding-top: 10px;">
+                                    <h3 class="portfolio-details__title1 fw-bold " style=" padding-top: 10px;">
                                         Claims Management</h3>
                                     <p class="portfolio-details__text-11">Our proactive approach ensures that claims are
                                         processed
@@ -538,8 +538,7 @@
                             <div class="col-xl-10 col-lg-9">
                                 <div class="portfolio-details__left1">
                                     <p class="portfolio-details__sub-title"></p>
-                                    <h3 class="portfolio-details__title1 fw-bold "
-                                        style="color: #4425f5; padding-top: 10px;">
+                                    <h3 class="portfolio-details__title1 fw-bold " style=" padding-top: 10px;">
                                         Payment Posting</h3>
                                     <p class="portfolio-details__text-11">Our payment posting service ensures accurate
                                         and timely
@@ -650,8 +649,7 @@
                             <div class="col-xl-10 col-lg-9">
                                 <div class="portfolio-details__left1">
                                     <p class="portfolio-details__sub-title"></p>
-                                    <h3 class="portfolio-details__title1 fw-bold "
-                                        style="color: #4425f5; padding-top: 10px;">
+                                    <h3 class="portfolio-details__title1 fw-bold " style=" padding-top: 10px;">
                                         Insurance Verification</h3>
                                     <p class="portfolio-details__text-11">Our insurance verification service ensures
                                         that
@@ -765,8 +763,7 @@
                             <div class="col-xl-10 col-lg-9">
                                 <div class="portfolio-details__left1">
                                     <p class="portfolio-details__sub-title"></p>
-                                    <h3 class="portfolio-details__title1 fw-bold "
-                                        style="color: #4425f5; padding-top: 10px;">
+                                    <h3 class="portfolio-details__title1 fw-bold " style=" padding-top: 10px;">
                                         Patient Billing and
                                         Collections</h3>
                                     <p class="portfolio-details__text-11">We manage the entire process, from issuing
@@ -868,7 +865,11 @@
                                             <span class="fas fa-map-marker-alt"></span>
                                         </div>
                                         <div class="content">
-                                            <h3>Location</h3>
+                                            <h3>US</h3>
+                                            <p>30 N Gould St Ste R,
+                                                Sheridan, WY 82801.</p>
+                                            <p></p>
+                                            <h3>India</h3>
                                             <p>No5,Arjunan Tower,Arani Road,Kamatchi Amman Kovil
                                                 Backside</p>
                                             <p>Sankaranpalayam,Vellore</p>

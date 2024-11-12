@@ -152,47 +152,9 @@
     <!-- /.preloader -->
 
 
+
     <div class="page-wrapper">
         <header class="main-header">
-            <!-- <div class="main-header__top">
-                <div class="container">
-                    <div class="main-header__top-inner">
-                        <div class="main-header__top-left">
-                            <ul class="list-unstyled main-header__contact-list">
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-clock"></i>
-                                    </div>
-                                    <div class="text">
-                                        <p>Mon to Sat: 9:00am to 6:00pm</p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-envelope"></i>
-                                    </div>
-                                    <div class="text">
-                                        <p><a href="info@infotekhealthcare.com">info@infotekhealthcare.com</a>
-                                        </p>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fas fa-map-marker"></i>
-                                    </div>
-                                    <div class="text">
-                                        <p>Vellore,TamilNadu</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div> 
-                        <div class="main-header__top-right">
-
-
-                        </div>
-                    </div>
-                </div>
-            </div> -->
             <nav class="main-menu">
                 <div class="main-menu__wrapper">
                     <div class="container">
@@ -205,7 +167,7 @@
                             <div class="main-menu__main-menu-box">
                                 <a href="#" class="mobile-nav__toggler"><i class="fa fa-bars"></i></a>
                                 <ul class="main-menu__list">
-                                    <li class="current megamenu">
+                                    <li class="{% if active_page == 'home' %}current{% endif %} megamenu">
                                         <a href="{{ url_for('index') }}">Home</a>
 
                                     </li>
@@ -276,9 +238,7 @@
                 <div class="item main-slider__slide-1">
 
 
-                    <!-- <div class="main-slider__bg"
-                        style="background-image: url('{{ url_for('static', filename='assets/images/backgrounds/slider-1-1.jpg') }}');">
-                    </div>   -->
+
 
                     <div class="main-slider__bg">
                         <style>
@@ -314,6 +274,43 @@
             </div>
         </section>
         <!--Main Sllider Start -->
+        <!-- <section class="page-header">
+
+            <div class="page-header__bg">
+                <style>
+                    .page-header {
+                        background-image: url("{{ url_for('static', filename='assets/images/backgrounds/Infotekhealthcare Indexbanner.jpg') }}");
+                        background-size: cover;
+                        background-position: center;
+                    }
+                </style>
+
+            </div>
+            <div class="main-slider__shape-1 rotate-me">
+                <img src="{{ url_for('static', filename='assets/images/shapes/team-one-shape-2.png') }}" alt="">
+            </div>
+            <div class="container">
+                <div class="main-slider__content1">
+                    <p class="main-slider__sub-title">Innovative Solutions for
+                        Healthcare Billing
+                        and Coding</p>
+                    <h2 class="main-slider__title">Revolutionizing Revenue Cycle Management <br> for Healthcare
+                        Providers. </h2>
+                    <p class="main-slider__text">Simplify Billing and Maximize your revenue with our expert RCM
+                        solutions.</p>
+                    <div class="main-slider__btn-and-video-box1">
+                        <div class="main-slider__btn-box1">
+                            <a href="{{ url_for('contact') }}" class="thm-btn main-slider__btn">Schedule a
+                                Demo</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </section> -->
+
 
         <!--Feature One Start -->
         <section class="feature-one">
@@ -561,9 +558,6 @@
 
         <!--Why Choose One Start -->
         <section class="why-choose-one">
-            <!-- <div class="why-choose-one__shape-3 float-bob-y-2">
-                <img src="assets/images/shapes/why-choose-one-shape-3.png" alt="">
-            </div> -->
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6">
@@ -671,8 +665,7 @@
                 </div>
                 <div class="row">
                     <!--Services One Single Start-->
-                    <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms"
-                        style="height: 100vh;">
+                    <div class="col-xl-6 col-lg-6 col-md-6 wow fadeInLeft" data-wow-delay="100ms">
                         <div class="services-one__single" style="height: 560px;">
                             <div class="services-one__single-hover-bg" id="MC-1">
                                 <!-- style="background-image: url('{{ url_for('static', filename='assets/images/services/index_medicalcoding_412x232.jpg') }}');"> -->
@@ -812,6 +805,7 @@
 
 
         <!--Services One Start -->
+
         <section class="services-one">
 
             <div class="container">
@@ -1110,7 +1104,7 @@
 
 
         <!--FAQ One Start-->
-        <section class="faq-one">
+        <section class="faq-one" style="margin-top: 30px;">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-5 col-lg-5">
@@ -1237,8 +1231,8 @@
                                     <p class="news-one__sub-title">
                                     </p>
                                     <h3 class="news-one__title"><a href="">Compliance</a></h3>
-                                    <p class="news-one__text">Clarus stands tall and proud by consistently adapting to
-                                        changes. We are currently ICD-10 compliant.</p>
+                                    <p class="news-one__text">Infotek stands tall and strong by constantly adjusting to
+                                        change. We are currently ICD-10-compliant.</p>
                                 </div>
 
                             </div>
@@ -1280,7 +1274,7 @@
                                 <div class="news-one__content-top">
                                     <p class="news-one__sub-title"></p>
                                     <h3 class="news-one__title"><a href="">CHPSE</a></h3>
-                                    <p class="news-one__text">Clarus RCM is a certified HIPAA PRIVACY SECURITY EXPERT.
+                                    <p class="news-one__text">Infotek RCM is a certified HIPAA PRIVACY SECURITY EXPERT.
                                     </p>
                                 </div>
 
@@ -1301,7 +1295,7 @@
                                 <div class="news-one__content-top">
                                     <p class="news-one__sub-title"></p>
                                     <h3 class="news-one__title"><a href="">HFMA</a></h3>
-                                    <p class="news-one__text">Clarus RCM is a proud member of HFMA.</p>
+                                    <p class="news-one__text">Infotek RCM is a proud member of the HFMA.</p>
                                 </div>
 
                             </div>
@@ -1378,7 +1372,11 @@
                                             <span class="fas fa-map-marker-alt"></span>
                                         </div>
                                         <div class="content">
-                                            <h3>Location</h3>
+                                            <h3>US</h3>
+                                            <p>30 N Gould St Ste R,
+                                                Sheridan, WY 82801.</p>
+                                            <p></p>
+                                            <h3>India</h3>
                                             <p>No5,Arjunan Tower,Arani Road,Kamatchi Amman Kovil
                                                 Backside</p>
                                             <p>Sankaranpalayam,Vellore</p>
