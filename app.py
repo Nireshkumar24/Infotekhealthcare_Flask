@@ -72,7 +72,7 @@ def index():
            
             msg = Message(
                 subject="New Subscriber",
-                recipients=["nireshkumarniresh007@gmail.com"]
+                recipients=["info@infotekhealthcare.com"]
             )
             msg.body = f"""
             A new user has subscribed to the newsletter:
@@ -108,7 +108,7 @@ def medical_billing():
            
             msg = Message(
                 subject="New Subscriber",
-                recipients=["nireshkumarniresh007@gmail.com"]
+                recipients=["info@infotekhealthcare.com"]
             )
             msg.body = f"""
             A new user has subscribed to the newsletter:
@@ -146,7 +146,7 @@ def medical_coding():
            
             msg = Message(
                 subject="New Subscriber",
-                recipients=["nireshkumarniresh007@gmail.com"]
+                recipients=["info@infotekhealthcare.com"]
             )
             msg.body = f"""
             A new user has subscribed to the newsletter:
@@ -213,7 +213,7 @@ def about():
            
             msg = Message(
                 subject="New Subscriber",
-                recipients=["nireshkumarniresh007@gmail.com"]
+                recipients=["info@infotekhealthcare.com"]
             )
             msg.body = f"""
             A new user has subscribed to the newsletter:
@@ -249,7 +249,7 @@ def techdriven():
            
             msg = Message(
                 subject="New Subscriber",
-                recipients=["nireshkumarniresh007@gmail.com"]
+                recipients=["info@infotekhealthcare.com"]
             )
             msg.body = f"""
             A new user has subscribed to the newsletter:
@@ -297,7 +297,7 @@ def contact():
             # Send email to info@infotekhealthcare.com with the form details
             msg = Message(
                 subject="New Contact Form Submission",
-                recipients=["nireshkumarniresh007@gmail.com"]
+                recipients=["info@infotekhealthcare.com"]
             )
             msg.body = f"""
             New contact form submission:
@@ -338,7 +338,7 @@ def carrer():
            
             msg = Message(
                 subject="New Subscriber",
-                recipients=["nireshkumarniresh007@gmail.com"]
+                recipients=["info@infotekhealthcare.com"]
             )
             msg.body = f"""
             A new user has subscribed to the newsletter:
@@ -373,7 +373,7 @@ def contactemail():
            
             msg = Message(
                 subject="New Subscriber",
-                recipients=["nireshkumarniresh007@gmail.com"]
+                recipients=["info@infotekhealthcare.com"]
             )
             msg.body = f"""
             A new user has subscribed to the newsletter:
